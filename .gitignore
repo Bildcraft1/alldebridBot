@@ -1,0 +1,5 @@
+.env
+bot.session
+bot.session.env
+venv
+.idea
