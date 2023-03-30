@@ -50,6 +50,9 @@ async def download_link(event):
 
 def main():
     """Start the bot."""
+    print("Starting the bot...")
+    print("Loggin with id: " + str(TELEGRAM_API_ID))
+    print("Enabled users: " + str(ENABLED_USERS))
     bot.run_until_disconnected()
 
 
