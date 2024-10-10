@@ -22,8 +22,10 @@ async def get_debrid_link(api_key, link):
         if data['status'] == 'success':
             return data['data']['link']
         else:
+            print(data)
             return False
     else:
+        print(response)
         return False
 
 
