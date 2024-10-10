@@ -15,7 +15,7 @@ bot = TelegramClient('bot', TELEGRAM_API_ID, TELEGRAM_API_HASH).start(bot_token=
 
 async def get_debrid_link(api_key, link):
     """Get the debrid link from AllDebrid in async way."""
-    url = f"https://api.alldebrid.com/v4/link/unlock?agent=TelegramBot&apikey={api_key}&link={link}"
+    url = f"https://api.alldebrid.com/v4/link/unlock?apikey={api_key}&agent=TelegramBot&link={link}"
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
